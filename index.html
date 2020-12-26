@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Sharpening Calculator</title>
+</head>
+<body onload="updateCost()">
+    <div>
+        <div class="inner">
+            <label>Initial Level:</label>
+            <input id="initial" class="line" type="number" min="0" max="29" value="0" onkeyup="updateCost()">
+        </div>
+        <br>
+        <div class="inner">
+            <label>Final Level:</label>
+            <input id="final" class="line" type="number" min="1" max="30" value="1" onkeyup="updateCost()">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="wrapper output">
+        <div class="row">
+        <div class="column">
+            <div class="inner">
+            <h2>Total:</h2>
+            <h3>Diamonds: <span id="totalDiamonds"></span></h3>
+            <h3>Embers: <span id="totalEmbers"></span></h3>
+            <h3>Deggs: <span id="totalDeggs"></span></h3>
+            <h3>Steggs: <span id="totalSteggs"></span></h3>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="inner">
+            <h2>Raw:</h2>
+            <h3>Diamonds: <span id="rawDiamonds"></span></h3>
+            <h3>Embers: <span id="rawEmbers"></span></h3>
+            <h3>Deggs: <span id="rawDeggs"></span></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
